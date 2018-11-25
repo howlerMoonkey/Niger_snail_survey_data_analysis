@@ -234,8 +234,8 @@ newer <- read.csv("survey_para_merge_ALL_2018-10-13.csv")
 #month - month as a variable
 #w_level_ed
 #access
-#season_WMO
-#seaon
+#season_wmo
+#season
 #site_type_code ## merge of para and survey- if na in para add fr para
 #canal
 #site_code
@@ -243,13 +243,10 @@ newer <- read.csv("survey_para_merge_ALL_2018-10-13.csv")
 
 ## mutate- average niger data temp by date- wmo vals will be same 
 ## for all sites for given date
-## WMO max min av prec- diff results- some pos some neg
 # see what site types recorded as dry or flooded
 
 mylogit <- glm(Bul_pres ~ Temp_Air + Temp_Eau + wmo_max_temp + wmo_prec + PPM + Cond,
-               data = newerer, family = "binomial")
-mylogit <- glm(bf_pos ~ site_code, data = newer, family = "binomial")
-mylogit <- glm(Bul_pres ~ season, data = newer, family = "binomial")
+               data = newer, family = "binomial")
 
 summary(mylogit)
 
