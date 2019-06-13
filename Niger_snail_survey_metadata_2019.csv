@@ -1,0 +1,112 @@
+column_no,heading,value,delete?,type,value,meaning,note,source
+1,rec_merge,3511,,numeric,1,"row record from merge of snail survey and water param datasets (dataset dimensions- 3931 rows, 109 columns)",,my edits (added in column)
+2,site_irn,382908,,numeric,360779,site code unique in dataset,,my edits (added in column)
+3,comp_key,382908_41453,,numeric,360779_40955,side code plus date value- composite key for matching water param and survey datasets together,,my edits (added in column)
+4,filter,NA,,text,NA,anomalous site records,,my edits (added in column)
+5,coll_date,28/06/2013,,date,16/02/2012,collection date,,orig dataset
+6,month,6,,numeric,2,,,my edits (added in column)
+7,year,2013,,date,2012,air temperature,,my edits (added in column)
+8,visit_no,19,,numeric,5,number allocated to each monthly survey- e.g. 1 for first field mission in late july 2011- to 48 for last one in jan 2016,,orig dataset
+9,district.clean,Kollo,,text,Kollo,district name cleaned,,my edits (added in column)
+10,site_code,na,,text,li,2 letter locality code,2 digit site code for plotting,my edits (added in column)
+11,locality,Namaro,,text,Libore,nearby village. 20 in total,,orig dataset
+12,site_type_ed.fr,canal tertiaire,,text,riziere,site type in french,misrecorded site types particularly in survey data,orig dataset
+13,site_type,canal.3,,text,rice.p,"can.2= secondary irrigation canal, canal.3= tertiary irrigation canal, rice.p = rice paddy",,orig dataset
+14,canal,y,,text,n,is the site a canal site- y/n,,my edits (added in column)
+15,SITE_Cat,temporary- sometimes dry,,text,temporary- sometimes dry,"if permanent- no record through whole dataset of this site ever being dried out, if temperary sometimes dry- seasonal site, if dry only this site generally only visited once",,my edits (added in column)
+16,site_name_clean,namaro 2 canal tertiaire,,text,libore 6 riziere,site name from both survey and water param datasets cleaned,,my edits (added in column)
+17,latitude_fin,13.71124,,numeric,13.39001,reference latitude for given site,,merged in from site data records- master record of site latitude
+18,longitude_fin,1.69775,,numeric,2.19713,reference longitude for given site,,merged in from site data records- master record of site latitude
+19,rec_surv,NA,,numeric,166,row number record for survey dataset,,my edits (added in column)
+20,site_type_surv_verb,NA,,text,SITE 6 RIZIERE,site no and type- verbatim recorded in orig datafiles,,orig dataset
+21,site_name_surv_verb,NA,,text,libore 6 riziere,survey dataset site name as recorded in original file,,orig dataset
+22,site_name_surv_clean,NA,,text,libore 6 riziere,survey dataset site name cleaned,,my edits (added in column)
+23,edited.date.surv,NA,,text,NA,if typo/misrecorded date in survey data recorded as y,,my edits (added in column)
+24,edited.site.surv,NA,,text,NA,if typo/misrecorded site in survey data recorded as y,,my edits (added in column)
+25,note.surv.site.date.edits,NA,,text,NA,notes explaining edited site/date columns,,my edits (added in column)
+26,SCORE_study_type,NA,,text,NA,designated study arm code (e.g. school based or community wide praziquantel treatment),changed halfway through. This column could be updated,orig dataset
+27,collection.done,NA,,text,YES,were snails collected- y/n,,orig dataset
+28,snails.pres.verb,NA,,text,YES,snails present- verbatim in orig dataset,,orig dataset
+29,sn_pres_clean,n,,text,y,snails present- y/n,,my edits (added in column)
+30,all_snail_tot,0,,numeric,1,total count of all snails,,orig dataset
+31,bp_pres,0,,numeric,0,Biomphalaria pfeifferi present- n/y,I added for glm 0/1,my edits (added in column)
+32,bp_pos,0,,numeric,0,Biomphalaria pfeifferi positive for infection (shedding cercariae) present- n/y,I added for glm 0/1,my edits (added in column)
+33,BP_tot,NA,,numeric,0,Biomphalaria pfeifferi total count/collected,,orig dataset
+34,BP_pos_tot,NA,,numeric,0,Biomphalaria pfeifferi positive for infection total no collected,,orig dataset
+35,bp_prev,NA,,numeric,,Bi. pfeifferi total positive/total collected *100 to give prevalence,,my edits
+36,Bul_pres,0,,numeric,1,any Bulinus spp. present- y/n,I added for glm 0/1,my edits (added in column)
+37,Bul_pos,0,,numeric,0,any Bulinus spp. present positive for infection- y/n,I added for glm 0/1,my edits (added in column)
+38,Bul_prev,NA,,numeric,,Bulinus total positive/total collected *100 to give prevalence,,my edits
+39,Bulinus_tot,NA,,numeric,1,total of all Bulinus spp. collected,,my edits (added in column)
+40,Bulinus_pos_tot,NA,,numeric,0,total of all Bulinus spp. positive for infection collected,,my edits (added in column)
+41,bt_pres,0,,numeric,0,Bulinus truncatus present- y/n,I added for glm 0/1,my edits (added in column)
+42,bt_pos,0,,numeric,0,Bulinus truncatus positive for infection present- y/n,I added for glm 0/1,my edits (added in column)
+43,BT_tot,NA,,numeric,0,total of Bulinus truncatus collected,,orig dataset
+44,BT_pos_tot,NA,,numeric,0,total of Bulinus truncatus positive for infection collected,,orig dataset
+45,BT_prev,NA,,numeric,0,B. truncatus total positive/total collected *100 to give prevalence,,my edits (added in column)
+46,bf_pres,0,,numeric,1,Bulinus forskalii present- y/n,I added for glm 0/1,my edits (added in column)
+47,bf_pos,0,,numeric,0,Bulinus forskalii positive for infection present- y/n,I added for glm 0/1,my edits (added in column)
+48,BF_tot,NA,,numeric,1,total of Bulinus forskalii collected,,orig dataset
+49,BF_pos_tot,NA,,numeric,0,total of Bulinus forskalii positive for infection collected,,orig dataset
+50,BF_prev,NA,,numeric,0,B. forskalii total positive/total collected *100 to give prevalence,,my edits (added in column)
+51,BG_tot,NA,,numeric,0,total of Bulinus globosus collected,found in v low numbers,orig dataset
+52,BS_tot,NA,,numeric,0,total of Bulinus senegalensis collected,found in v low numbers,orig dataset
+53,ln_pres,0,,numeric,0,Lymnaea natalensis present- y/n,I added for glm 0/1,my edits (added in column)
+54,L_tot,NA,,numeric,0,total of Lymnaea natalensis collected,,orig dataset
+55,rec_para,1293,,numeric,344,row ref para data in raw data,,my edits (added in column)
+56,site_name_para_verb,namaro 2 canal tertiaire,,text,libore 6 riziere,water param dataset site name as recorded in original file,,orig dataset
+57,site_name_para_clean,namaro 2 canal tertiaire,,text,libore 6 riziere,water param dataset site name cleaned,,my edits (added in column)
+58,point.para,2,,numeric,6,site no in water param dataset only,,orig dataset
+59,edited.site.para,NA,,text,NA,were edits made in water param site name- y/n,,my edits (added in column)
+60,note.para.site.edits,NA,,text,NA,notes explaining site name edit,,my edits (added in column)
+61,access,Y,,text,Y,"was site accessible- y/n. if not- context notes for reason why not in above e.g. rice harvesting going on, flood",,orig dataset
+62,time_notes,heure: non precise,,text,heure: non precise,time of survey,often missing,orig dataset
+63,Heure,NA,,numeric,NA,time of survey,,orig dataset
+64,duration_notes,NA,,text,duration: non precise,non-precise- if time sampled not precise presumably,often missing,orig dataset
+65,durat_verb,NA,,numeric,NA,period of survey- 15 min in survey design but often 30 min (often not recorded),,orig dataset
+66,duration.amina,NA,y,,,duration data from Amina May 2019,"mixed data in column ie text, numeric",via Amina may 2019
+67,duration,NA,,numeric,,cleaned duration data- combining durat_verb and duration.amina,,my edits
+68,visit_note_cleaned,destroyed,,text,NA,original visit note in french- translated and cleaned,,my edits (added in column)
+69,notes_amina_verb_may2019,site asseche,y,,,visit notes from Amina May 2019,,via Amina may 2019
+70,amina_notes_may2019,site dry,,,,visit notes from Amina May 2019- cleaned,,my edits
+71,coll1,Adamou Garba,,text,Rabiou Labo,collector name,was concatenated in orig dataset,orig dataset
+72,coll2,Omar Barkire,,text,Tankari,collector name,,orig dataset
+73,coll3,Ali Maiga,,text,NA,collector name,,orig dataset
+74,coll4,NA,,text,NA,collector name,,orig dataset
+75,water_notes,NA,,text,NA,notes explaining some of outliers in water param values,,my edits (added in column)
+76,Temp_Air,NA,,numeric,28.9,air temperature,,orig dataset
+77,Temp_Water,NA,,numeric,25.5,water temperature,,orig dataset
+78,water_level.v,NA,,text,low,"water level as recorded in original dataset (low, med, high, in flood)",,orig dataset
+79,water_level3,NA,,text,low,water level edited to 3 levels only (some of in flood records the water depth is recorded as low),,my edits (added in column)
+80,Stagnante,NA,,text,Y,no flow y/n,,orig dataset
+81,water_speed_ms,NA,,numeric,0,water speed in m per sec,,orig dataset
+82,water_depth,NA,,numeric,10,water depth in cm,,orig dataset
+83,pH,NA,,numeric,8.18,pH reading from flow metre,,orig dataset
+84,Cond,NA,,numeric,119,conductivity in ppm,,orig dataset
+85,PPM,NA,,numeric,59,ppm water param data value,,orig dataset
+86,Latitude.verb,NA,,numeric,NA,latitude verbatim,generally missing,orig dataset
+87,Longitude.verb,NA,,numeric,NA,longitude verbatim,generally missing,orig dataset
+88,Altitude_m,NA,,numeric,NA,altitude in metres generally not recorded,,orig dataset
+89,season,wet,,text,dry,"season value from original dataset (wet season june- oct, dry nov- may)",,orig dataset
+90,seas_wmo,wet,,text,dry,"season value adjusted to make may as part of wet season as often rain in this month (i.e. season acc to month of year AND WMO data).  wet season MAY- oct, dry nov- april)",,merged in from WMO weather station data
+91,rec.wmo,729,y,numeric,231,"my row reference for Weather station data- acquired for the Niamey Weather Station (ID 6152), and downloaded from the USDA Foreign Agricultural Service pecad site ",,merged in from WMO weather station data
+92,wmo.date,06/28/2013,y,date,02/16/2012,weather station data verbatim date,verbatim,merged in from WMO weather station data
+93,wmo.date.clean,28/06/2013,y,date,16/02/2012,weather station data edited date dd/mm/yy,via lubridate,merged in from WMO weather station data
+94,PercentRpt,99.73,,numeric,98.91,weather station data not sure what this is,,merged in from WMO weather station data
+95,wmo_min_temp,22.6,,numeric,24,weather station day minimum air temp,,merged in from WMO weather station data
+96,wmo_max_temp,35,,numeric,38.5,weather station day max air temp,,merged in from WMO weather station data
+97,wmo_av_temp,28.8,,numeric,31.25,weather station day average air temp,,merged in from WMO weather station data
+98,wmo_prec,0,,numeric,0,weather station precipication in cm,,merged in from WMO weather station data
+99,wmo_prec_code,dry,,text,dry,"if zero precipication= dry, if any= wet (not with any reference to month of year unlike seas_wmo)",often 'dry' in the wet season and vice versa- season column is by month,merged in from WMO weather station data
+100,int_host_sp,NA,,text,NA,"if cercariae collected on FTA, what was the intermediate host i.e. snail species they were from",,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+101,int_host_sp2,NA,,text,NA,"if cercariae collected from 2 different snails on same date, same site . In 2 cases only",,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+102,S..mansoni,NA,,text,NA,schistosoma sp of cercariae collected,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+103,S..bovis,NA,,text,NA,schistosoma sp of cercariae collected,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+104,S..haematobium,NA,,text,NA,schistosoma sp of cercariae collected,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+105,Schistosoma.sp.,NA,,text,NA,schistosoma sp of cercariae collected (Schistosoma sp. If is a S. bovis/S. haematobium hybrid),,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+106,FTA_voucher,NA,,text,NA,is there an FTA voucher i.e. cercariae collected on FTA from this site/date,add for snail coll data,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+107,FTA_rec_only,NA,,text,NA,,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+108,FTA_NOTE,NA,,text,NA,notes e.g. FTA but no pos snail record and no close match- 48 cases of this. Also recording where FTA date edited,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+109,FTA_site_name,NA,y,text,NA,FTA record site name,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+110,FTA_site_irn,NA,y,numeric,NA,FTA record site code,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
+111,FTA_coll_date,NA,y,date,NA,FTA record collection date,,FTA data- i.e. in collection if there are schistosomes (on FTA) from this site/date
